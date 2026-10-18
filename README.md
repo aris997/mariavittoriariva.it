@@ -1,6 +1,6 @@
 # mariavittoriariva.it
 
-WebSite Venue Manager — personal CV site (Vite + React + TypeScript), served from the S3 bucket `mariavittoriariva.it`.
+WebSite Venue Manager — personal CV site (Vite + React + TypeScript), served from the private S3 bucket `mariavittoriariva.it` through CloudFront (HTTPS).
 
 ```bash
 npm install

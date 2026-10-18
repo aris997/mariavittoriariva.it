@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      // error.html is the S3 website "Error document" (served for 404s).
+      // error.html is CloudFront's custom error page (403/404 from the private bucket).
       input: { main: 'index.html', error: 'error.html' },
     },
   },

@@ -12,7 +12,7 @@ export type SectionId = (typeof SECTIONS)[number]
 export type When = { from: string; to: string } | { on: readonly string[] }
 
 export const NAME = 'Maria Vittoria Riva'
-export const SITE_URL = 'http://mariavittoriariva.it'
+export const SITE_URL = 'https://mariavittoriariva.it'
 export const CV_PATH = '/maria-vittoria-riva-cv.pdf'
 
 // Split so the address and number are not present verbatim in the shipped bundle.

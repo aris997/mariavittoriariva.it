@@ -60,18 +60,14 @@ jobs:
     timeout-minutes: 15
     environment: production
     steps:
-      - name: Resolve website endpoint
+      - name: Check repository variables
         env:
           REGION: ${{ vars.AWS_REGION }}
+          CF_DOMAIN: ${{ vars.CLOUDFRONT_DOMAIN }}
         run: |
           : "${REGION:?repository variable AWS_REGION is not set (gh variable set AWS_REGION --body <region>)}"
-          # Legacy regions use s3-website-<region>, all others s3-website.<region>
-          # (https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints).
-          case "$REGION" in
-            us-east-1|us-west-1|us-west-2|eu-west-1|ap-southeast-1|ap-southeast-2|ap-northeast-1|sa-east-1|us-gov-west-1) sep=- ;;
-            *) sep=. ;;
-          esac
-          echo "WEBSITE_URL=http://${BUCKET}.s3-website${sep}${REGION}.amazonaws.com" >> "$GITHUB_ENV"
+          : "${CF_DOMAIN:?repository variable CLOUDFRONT_DOMAIN is not set (gh variable set CLOUDFRONT_DOMAIN --body dxxxx.cloudfront.net)}"
+          echo "CF_URL=https://$CF_DOMAIN" >> "$GITHUB_ENV"
 
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
@@ -84,6 +80,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ vars.AWS_REGION }}
 
+      # The bucket is private (CloudFront reads it through OAC); this job only writes objects.
       # Order: new hashed assets -> HTML that references them -> prune old assets.
       # Content-Type comes from the CLI's bundled Python mimetypes (+ /etc/mime.types), which maps
       # js/css/woff2/svg/pdf/jpg correctly; only HTML is forced, to add the charset.
@@ -113,11 +110,13 @@ jobs:
             --delete --size-only --no-progress \
             --cache-control "$CACHE_IMMUTABLE"
 
-      - name: Smoke test website endpoint
+      # Through the *.cloudfront.net name, so it works regardless of DNS. HTML is no-cache, which
+      # CloudFront honours down to the cache policy's 1 s minimum TTL, so no invalidation is needed.
+      - name: Smoke test CloudFront
         run: |
           check() {
             out=$(curl -sS --retry 3 --retry-all-errors --max-time 20 -o /dev/null \
-              -w '%{http_code} %{content_type}' "$WEBSITE_URL/$1")
+              -w '%{http_code} %{content_type}' "$CF_URL/$1")
             echo "/$1 -> $out"
             [[ $out == 200\ $2 ]] || { echo "::error::/$1: expected 200 $2, got $out"; return 1; }
           }
@@ -132,6 +131,6 @@ jobs:
           {
             echo "### Deployed \`${GITHUB_SHA::7}\` to \`s3://$BUCKET\`"
             echo
-            echo "- Site: http://$BUCKET/"
-            echo "- S3 website endpoint: $WEBSITE_URL/"
+            echo "- Site: https://$BUCKET/"
+            echo "- CloudFront: $CF_URL/"
           } >> "$GITHUB_STEP_SUMMARY"
