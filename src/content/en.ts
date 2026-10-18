@@ -2,7 +2,7 @@ import type { Content } from './types'
 
 export const en: Content = {
   meta: {
-    title: 'Maria Vittoria Riva — Venue & Event Operations',
+    title: 'Maria Vittoria Riva | Venue & Event Operations',
     description:
       'Venue and event operations professional working between Italy and Japan: Asian Games Aichi-Nagoya 2026, Expo 2025 Osaka, Kansai. Italian, English, Japanese.',
   },
@@ -26,7 +26,7 @@ export const en: Content = {
     nameReading: '',
     role: 'Venue & Event Operations',
     intro:
-      'I coordinate venues, protocol visits and guest experiences between Italy and Japan — most recently at the Asian Games Aichi-Nagoya 2026 and Expo 2025 Osaka, Kansai.',
+      'I coordinate venues, protocol visits and guest experiences between Italy and Japan, most recently at the Asian Games Aichi-Nagoya 2026 and Expo 2025 Osaka, Kansai.',
     location: 'Japan · Italy',
     ctaContact: 'Get in touch',
     ctaCv: 'Download CV',
@@ -43,7 +43,7 @@ export const en: Content = {
     paragraphs: [
       'I’m a venue and event operations professional with a deep connection to Japan. I worked on the venue operations team of the Asian Games Aichi-Nagoya 2026, and as a Protocol Officer for the Italian Ministry of Foreign Affairs and International Cooperation at Expo 2025 Osaka, Kansai.',
       'Before that, I spent several years in Rome looking after visitors: training and coordinating guide teams for The Tour Guy and leading Japanese student groups for Kuoni Tumlare. I hold a Master’s degree in Japanese Culture and Language from Sapienza University of Rome (110/110 cum laude) and studied at Sophia University in Tokyo.',
-      'I care about the details that make events feel effortless: clear briefings, punctual logistics, and guests who feel safe and welcome — in Italian, English or Japanese.',
+      'I care about the details that make events feel effortless: clear briefings, punctual logistics, and guests who feel safe and welcome, in Italian, English or Japanese.',
     ],
   },
   strengths: {
@@ -82,7 +82,7 @@ export const en: Content = {
       expo: 'Expo 2025 Osaka, Kansai',
       kuoni: 'Kuoni Tumlare',
       tourGuy: 'The Tour Guy S.r.l.',
-      ciao: 'CIAO Information Center — Sapienza University of Rome',
+      ciao: 'CIAO Information Center, Sapienza University of Rome',
     },
     roles: {
       venueOpsAssistant: {
@@ -113,7 +113,7 @@ export const en: Content = {
         ],
       },
       guideCoordinator: {
-        title: 'Guide Coordinator — Italy, Barcelona & London',
+        title: 'Guide Coordinator (Italy, Barcelona & London)',
         employer: '',
         bullets: [
           'Supervised and trained tour guides to enhance the customer experience and maintain high service standards.',
@@ -134,7 +134,7 @@ export const en: Content = {
         ],
       },
       studentHelper: {
-        title: 'Student Helper — Communication',
+        title: 'Student Helper (Communication)',
         employer: '',
         bullets: [
           'Advised students on, and promoted, University services, activities and cultural initiatives.',
@@ -186,11 +186,11 @@ export const en: Content = {
     items: {
       mun: {
         title: 'National Model United Nations',
-        role: 'Delegate of Colombia — UNHCR (2017), WHO (2018)',
+        role: 'Delegate of Colombia: UNHCR (2017), WHO (2018)',
         text: 'Simulated diplomatic processes and the resolution of international issues such as human rights violations, migration and health.',
       },
       scouts: {
-        title: 'Volunteering — Scouts',
+        title: 'Volunteering: Scouts',
         role: 'Patrol Leader',
         text: '',
       },
@@ -212,5 +212,6 @@ export const en: Content = {
     title: 'Page not found',
     text: 'The page you are looking for doesn’t exist or has moved.',
     back: 'Back to the homepage',
+    redirect: (s) => `Taking you to the homepage in ${s} ${s === 1 ? 'second' : 'seconds'}.`,
   },
 }

@@ -66,5 +66,5 @@ export interface Content {
     cvNote: string
   }
   footer: { rights: string }
-  notFound: { title: string; text: string; back: string }
+  notFound: { title: string; text: string; back: string; redirect: (seconds: number) => string }
 }

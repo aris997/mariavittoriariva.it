@@ -2,7 +2,7 @@ import type { Content } from './types'
 
 export const it: Content = {
   meta: {
-    title: 'Maria Vittoria Riva — Venue & Event Operations',
+    title: 'Maria Vittoria Riva | Venue & Event Operations',
     description:
       'Professionista della gestione operativa di venue ed eventi tra Italia e Giappone: Giochi Asiatici di Aichi-Nagoya 2026 ed Expo 2025 Osaka, Kansai. Italiano, inglese, giapponese.',
   },
@@ -26,7 +26,7 @@ export const it: Content = {
     nameReading: '',
     role: 'Venue & Event Operations',
     intro:
-      'Coordino venue, visite protocollari e accoglienza degli ospiti tra Italia e Giappone — più di recente ai Giochi Asiatici di Aichi-Nagoya 2026 e a Expo 2025 Osaka, Kansai.',
+      'Coordino venue, visite protocollari e accoglienza degli ospiti tra Italia e Giappone, più di recente ai Giochi Asiatici di Aichi-Nagoya 2026 e a Expo 2025 Osaka, Kansai.',
     location: 'Giappone · Italia',
     ctaContact: 'Contattami',
     ctaCv: 'Scarica il CV',
@@ -43,7 +43,7 @@ export const it: Content = {
     paragraphs: [
       'Sono una professionista della gestione operativa di venue ed eventi, profondamente legata al Giappone. Ho lavorato nel team Venue Operations dei Giochi Asiatici di Aichi-Nagoya 2026 e come Protocol Officer per il Ministero degli Affari Esteri e della Cooperazione Internazionale a Expo 2025 Osaka, Kansai.',
       'In precedenza ho trascorso diversi anni a Roma prendendomi cura dei visitatori: ho formato e coordinato team di guide per The Tour Guy e accompagnato gruppi di studenti giapponesi per Kuoni Tumlare. Ho conseguito la laurea magistrale in Lingua e cultura giapponese alla Sapienza Università di Roma (110/110 e lode) e ho studiato alla Sophia University di Tokyo.',
-      'Ho a cuore i dettagli che fanno filare liscio un evento: briefing chiari, logistica puntuale e ospiti che si sentono al sicuro e ben accolti — in italiano, in inglese o in giapponese.',
+      'Ho a cuore i dettagli che fanno filare liscio un evento: briefing chiari, logistica puntuale e ospiti che si sentono al sicuro e ben accolti, in italiano, in inglese o in giapponese.',
     ],
   },
   strengths: {
@@ -82,7 +82,7 @@ export const it: Content = {
       expo: 'Expo 2025 Osaka, Kansai',
       kuoni: 'Kuoni Tumlare',
       tourGuy: 'The Tour Guy S.r.l.',
-      ciao: 'CIAO, Centro informazioni accoglienza e orientamento — Sapienza Università di Roma',
+      ciao: 'CIAO, Centro informazioni accoglienza e orientamento (Sapienza Università di Roma)',
     },
     roles: {
       venueOpsAssistant: {
@@ -113,7 +113,7 @@ export const it: Content = {
         ],
       },
       guideCoordinator: {
-        title: 'Coordinatrice delle guide — Italia, Barcellona e Londra',
+        title: 'Coordinatrice delle guide (Italia, Barcellona e Londra)',
         employer: '',
         bullets: [
           'Supervisione e formazione delle guide turistiche per migliorare l’esperienza dei clienti e mantenere elevati standard di servizio.',
@@ -134,7 +134,7 @@ export const it: Content = {
         ],
       },
       studentHelper: {
-        title: 'Studentessa collaboratrice — Comunicazione',
+        title: 'Studentessa collaboratrice (Comunicazione)',
         employer: '',
         bullets: [
           'Orientamento degli studenti e promozione di servizi, attività e iniziative culturali dell’Università.',
@@ -186,11 +186,11 @@ export const it: Content = {
     items: {
       mun: {
         title: 'National Model United Nations',
-        role: 'Delegata della Colombia — UNHCR (2017), OMS (2018)',
+        role: 'Delegata della Colombia: UNHCR (2017), OMS (2018)',
         text: 'Simulazione di processi diplomatici e della risoluzione di questioni internazionali come le violazioni dei diritti umani, le migrazioni e la salute.',
       },
       scouts: {
-        title: 'Volontariato — Scout',
+        title: 'Volontariato: Scout',
         role: 'Capo squadriglia',
         text: '',
       },
@@ -212,5 +212,6 @@ export const it: Content = {
     title: 'Pagina non trovata',
     text: 'La pagina che cerchi non esiste o è stata spostata.',
     back: 'Torna alla homepage',
+    redirect: (s) => `Ritorno alla homepage tra ${s} ${s === 1 ? 'secondo' : 'secondi'}.`,
   },
 }

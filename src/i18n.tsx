@@ -5,7 +5,7 @@ import type { Content } from './content/types'
 
 const STORAGE_KEY = 'lang'
 const LOCALES: Record<Lang, string> = { en: 'en-US', it: 'it-IT', ja: 'ja-JP' }
-const RANGE_SEP: Record<Lang, string> = { en: ' – ', it: ' – ', ja: '～' }
+const RANGE_SEP: Record<Lang, string> = { en: ' - ', it: ' - ', ja: '～' }
 
 const isLang = (v: unknown): v is Lang => LANGS.includes(v as Lang)
 

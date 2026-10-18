@@ -156,7 +156,7 @@ export const ja: Content = {
         institution: 'ローマ・ラ・サピエンツァ大学',
         degree: '修士（日本文化・日本語）',
         grade: '110/110（満点）・優等（cum laude）',
-        details: ['修士論文：「日伊二国間関係の160年——外交、美術展、万国博覧会」'],
+        details: ['修士論文：「日伊二国間関係の160年：外交、美術展、万国博覧会」'],
       },
       bachelor: {
         institution: 'ローマ・ラ・サピエンツァ大学',
@@ -208,5 +208,6 @@ export const ja: Content = {
     title: 'ページが見つかりません',
     text: 'お探しのページは存在しないか、移動した可能性があります。',
     back: 'トップページへ戻る',
+    redirect: (s) => `${s}秒後にトップページへ移動します。`,
   },
 }
