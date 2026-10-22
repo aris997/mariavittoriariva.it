@@ -26,7 +26,7 @@ export const it: Content = {
     nameReading: '',
     role: 'Venue & Event Operations',
     intro:
-      'Coordino venue, visite protocollari e accoglienza degli ospiti tra Italia e Giappone, più di recente ai Giochi Asiatici di Aichi-Nagoya 2026 e a Expo 2025 Osaka, Kansai.',
+      'Attiva tra Italia e Giappone nel campo delle venue operations, del protocollo e del coordinamento ospiti. Recentemente ho collaborato ad eventi di calibro internazionale come Expo 2025 Osaka, Kansai e i Giochi Asiatici di Aichi-Nagoya 2026.',
     location: 'Giappone · Italia',
     ctaContact: 'Contattami',
     ctaCv: 'Scarica il CV',
@@ -41,9 +41,10 @@ export const it: Content = {
   about: {
     heading: 'Chi sono',
     paragraphs: [
-      'Sono una professionista della gestione operativa di venue ed eventi, profondamente legata al Giappone. Ho lavorato nel team Venue Operations dei Giochi Asiatici di Aichi-Nagoya 2026 e come Protocol Officer per il Ministero degli Affari Esteri e della Cooperazione Internazionale a Expo 2025 Osaka, Kansai.',
-      'In precedenza ho trascorso diversi anni a Roma prendendomi cura dei visitatori: ho formato e coordinato team di guide per The Tour Guy e accompagnato gruppi di studenti giapponesi per Kuoni Tumlare. Ho conseguito la laurea magistrale in Lingua e cultura giapponese alla Sapienza Università di Roma (110/110 e lode) e ho studiato alla Sophia University di Tokyo.',
-      'Ho a cuore i dettagli che fanno filare liscio un evento: briefing chiari, logistica puntuale e ospiti che si sentono al sicuro e ben accolti, in italiano, in inglese o in giapponese.',
+      'Con una solida esperienza nelle venue ed event operations, unisco professionalità a un profondo legame con il Giappone. Ho fatto parte del team di venue operations al Nagoya Prefectural Budokan per i Giochi Asiatici di Aichi-Nagoya 2026 e ho ricoperto il ruolo di Protocol Officer per il Ministero degli Affari Esteri e della Cooperazione Internazionale a Expo 2025 Osaka, Kansai.',
+      'In precedenza ho trascorso diversi anni a Roma nel settore del turismo, gestendo l’accoglienza e coordinando oltre 200 guide nelle principali mete turistiche italiane, a Londra e a Barcellona.',
+      'Ho conseguito la laurea magistrale in Lingua e Civiltà Orientali (Giapponese) alla Sapienza Università di Roma con 110/110 e lode, e ho studiato per un anno alla Sophia University di Tokyo.',
+      'Credo fortemente che siano i dettagli a fare la differenza, trasformando eventi e organizzazioni in esperienze fluide e impeccabili: briefing chiari, logistica puntuale e la certezza che ogni ospite si senta sicuro e benvenuto, in italiano, inglese o giapponese.',
     ],
   },
   strengths: {
@@ -59,11 +60,11 @@ export const it: Content = {
       },
       teams: {
         title: 'Coordinamento dei team',
-        text: 'Supervisione e formazione dei team di guide in Italia, a Barcellona e a Londra, e programmazione dei loro turni.',
+        text: 'Supervisione e formazione dei team di guide, e programmazione dei loro turni.',
       },
       bridge: {
         title: 'Un ponte tra Italia e Giappone',
-        text: 'Interpretariato tra inglese e giapponese, e accompagnamento di visitatori giapponesi alla scoperta di Roma.',
+        text: 'Interpretariato tra inglese e giapponese, e accompagnamento di visitatori giapponesi.',
       },
     },
   },
@@ -156,7 +157,7 @@ export const it: Content = {
       },
       master: {
         institution: 'Sapienza Università di Roma',
-        degree: 'Laurea magistrale in Lingua e cultura giapponese',
+        degree: 'Laurea magistrale in Lingua e Civiltà Orientali (Giapponese)',
         grade: '110/110 e lode',
         details: [
           'Tesi: «160 anni di rapporti bilaterali Italia e Giappone: diplomazia, mostre d’arte ed esposizioni universali».',
@@ -176,7 +177,7 @@ export const it: Content = {
     items: {
       it: { name: 'Italiano', level: 'Madrelingua' },
       en: { name: 'Inglese', level: 'Professionale' },
-      ja: { name: 'Giapponese', level: 'Intermedio-alto (livello N2)' },
+      ja: { name: 'Giapponese', level: 'Intermedio-alto (JLPT N2)' },
       ko: { name: 'Coreano', level: 'Base' },
       fr: { name: 'Francese', level: 'Base' },
     },

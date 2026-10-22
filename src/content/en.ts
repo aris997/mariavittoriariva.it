@@ -26,7 +26,7 @@ export const en: Content = {
     nameReading: '',
     role: 'Venue & Event Operations',
     intro:
-      'I coordinate venues, protocol visits and guest experiences between Italy and Japan, most recently at the Asian Games Aichi-Nagoya 2026 and Expo 2025 Osaka, Kansai.',
+      'Operating between Italy and Japan, I specialize in venue operations, protocol services, and guest relations coordination. Most recently, I was involved in the Asian Games Aichi-Nagoya 2026 and Expo 2025 Osaka, Kansai.',
     location: 'Japan · Italy',
     ctaContact: 'Get in touch',
     ctaCv: 'Download CV',
@@ -41,9 +41,10 @@ export const en: Content = {
   about: {
     heading: 'About me',
     paragraphs: [
-      'I’m a venue and event operations professional with a deep connection to Japan. I worked on the venue operations team of the Asian Games Aichi-Nagoya 2026, and as a Protocol Officer for the Italian Ministry of Foreign Affairs and International Cooperation at Expo 2025 Osaka, Kansai.',
-      'Before that, I spent several years in Rome looking after visitors: training and coordinating guide teams for The Tour Guy and leading Japanese student groups for Kuoni Tumlare. I hold a Master’s degree in Japanese Culture and Language from Sapienza University of Rome (110/110 cum laude) and studied at Sophia University in Tokyo.',
-      'I care about the details that make events feel effortless: clear briefings, punctual logistics, and guests who feel safe and welcome, in Italian, English or Japanese.',
+      'I am a venue and event operations professional with a deep connection to Japan. I worked with the venue operations team at the Nagoya Prefectural Budokan for the Asian Games Aichi-Nagoya 2026, and served as a Protocol Officer for the Italian Ministry of Foreign Affairs and International Cooperation at Expo 2025 Osaka, Kansai.',
+      'Before that, I spent several years in Rome working in high-level hospitality ranging from welcoming guests to coordinating over 200 guides across Italy’s most famous destinations, London, and Barcelona.',
+      'I hold a Master’s degree in Japanese Culture and Language from Sapienza University of Rome (110/110 cum laude) and spent a year studying at Sophia University in Tokyo.',
+      'I care about the small details that make events and organizations feel effortless: clear briefings, punctual logistics, and ensuring guests feel safe and welcome whether in Italian, English, or Japanese.',
     ],
   },
   strengths: {
@@ -59,11 +60,11 @@ export const en: Content = {
       },
       teams: {
         title: 'Team coordination',
-        text: 'Supervising, training and scheduling guide teams across Italy, Barcelona and London.',
+        text: 'Supervising, training and scheduling guide teams.',
       },
       bridge: {
         title: 'Bridging Italy and Japan',
-        text: 'Interpreting between English and Japanese, and guiding Japanese visitors through Rome.',
+        text: 'Interpreting between English and Japanese, and guiding Japanese visitors.',
       },
     },
   },
@@ -176,7 +177,7 @@ export const en: Content = {
     items: {
       it: { name: 'Italian', level: 'Native' },
       en: { name: 'English', level: 'Business' },
-      ja: { name: 'Japanese', level: 'High intermediate (N2 level)' },
+      ja: { name: 'Japanese', level: 'High intermediate (JLPT N2)' },
       ko: { name: 'Korean', level: 'Basic' },
       fr: { name: 'French', level: 'Basic' },
     },
